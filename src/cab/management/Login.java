@@ -4,7 +4,6 @@
  */
 package cab.management;
 
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -17,9 +16,6 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        ImagePanel imagePanel = new ImagePanel("icons/taxi.jpg");
-        getContentPane().add(imagePanel);
-        imagePanel.setBounds(0, 0, getWidth(), getHeight());
     }
 
     /**
@@ -43,6 +39,7 @@ public class Login extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login Account");
         setBackground(new java.awt.Color(51, 0, 51));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(379, 460));
@@ -164,7 +161,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(110, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -188,6 +185,9 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        SignUp s=new SignUp();
+        s.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

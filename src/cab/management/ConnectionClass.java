@@ -31,9 +31,5 @@ public class ConnectionClass {
             Logger.getLogger(ConnectionClass.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public static void main(String args[]){
-        new ConnectionClass();
-        
-    }
 }
 
